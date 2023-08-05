@@ -1,0 +1,9 @@
+platform :ios, '12.4'
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+target 'BVLinearGradient' do
+  config = use_native_modules!
+
+  use_react_native!(:path => config[:reactNativePath])
+end
