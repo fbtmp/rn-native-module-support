@@ -6,4 +6,8 @@ target 'RNLinearGradient' do
   config = use_native_modules!
 
   use_react_native!(:path => config[:reactNativePath])
+
+  post_install do |installer|
+    react_native_post_install(installer)
+  end
 end
