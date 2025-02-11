@@ -9,5 +9,6 @@ target 'RNLinearGradient' do
 
   post_install do |installer|
     react_native_post_install(installer)
+    __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
 end
