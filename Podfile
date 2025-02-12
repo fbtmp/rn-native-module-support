@@ -10,7 +10,6 @@ target 'RNLinearGradient' do
 
   use_react_native!(
     :path => config[:reactNativePath],
-    :hermes_enabled => true,
     :fabric_enabled => flags[:fabric_enabled],
   )
 
